@@ -39,7 +39,7 @@ parser.add_argument('--consistency_rampup', type=float, default=2000.0, help='co
 parser.add_argument('--consistency', type=float, default=1.0, help='weight to balance all losses')
 
 parser.add_argument('--num_workers', type=int, default=4, help='num_workers for training set')
-parser.add_argument('--gpu', type=str,  default='1', help='GPU to use')
+parser.add_argument('--gpu', type=str,  default='0', help='GPU to use')
 
 args = parser.parse_args()
 os.environ['CUDA_VISIBLE_DEVICES'] = args.gpu
